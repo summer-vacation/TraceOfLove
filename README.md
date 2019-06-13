@@ -47,3 +47,6 @@ uwsgi托管flask项目，其作用为：
 nodejs v12.4.0
 npm 6.9.0
 vue 2.9.6
+
+yarn 代理配置:
+yarn config set registry https://registry.npm.taobao.org
