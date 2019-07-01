@@ -1,32 +1,34 @@
 ## TraceOfLove
 
 前后端分离 backend 使用flask框架，代码置于backend文件夹下，前端使用vue框架，代码置于frontend文件夹下。
+</br>
 
 ### backend
-环境：  
+**环境：**  
 python 3.7 64位
 
 
-说明：  
+**说明：**  
 1. 需要的一些python库 > requirements.txt  
   &nbsp; 一键安装方法：  
   &nbsp;&nbsp;&nbsp; pip install -r requirements.txt
-   
-2. run.py中有一段测试代码，可以运行
 
-发布：
+2. run.py中有一段测试代码，可以运行  
+
+
+**发布：**
 centos7下通过uwsgi+Nginx发布Flask应用
 
 (uWSGI: micro web server gateway interface)
 
-安装uwsgi: pip install uWSGI 
+安装uwsgi: pip install uWSGI
 
-配置uwsgi:
+**配置uwsgi:**
 
-编写uwsgi config文件; 
+编写uwsgi config文件;   
 cmd : uwsgi -ini [path to uwsgi_config_file];
 
-配置nginx:
+**配置nginx:**
 
 编写nginx config文件
 cmd : nginx -c [path to nginx config file]
@@ -40,13 +42,15 @@ uwsgi托管flask项目，其作用为：
 * 负载均衡和rpc
 * 中间层内容处理
 
-重启服务 uwsgi --reload [uwsgi config file]
+**重启服务** uwsgi --reload [uwsgi config file]
+</br>
 
+--------------------------------------
 ### frontend
-环境:
+**环境:**
 nodejs v12.4.0
 npm 6.9.0
 vue 2.9.6
 
-yarn 代理配置:
+**yarn 代理配置:**
 yarn config set registry https://registry.npm.taobao.org
