@@ -16,12 +16,12 @@ python 3.7 64位
 2. run.py中有一段测试代码，可以运行  
 
 
-**发布：**
+**发布：**  
 centos7下通过uwsgi+Nginx发布Flask应用
 
 (uWSGI: micro web server gateway interface)
 
-安装uwsgi: pip install uWSGI
+安装uwsgi: pip install uWSGI  
 
 **配置uwsgi:**
 
@@ -42,15 +42,16 @@ uwsgi托管flask项目，其作用为：
 * 负载均衡和rpc
 * 中间层内容处理
 
-**重启服务** uwsgi --reload [uwsgi config file]
+**重启服务:**  
+uwsgi --reload [uwsgi config file]
 </br>
 
 --------------------------------------
 ### frontend
-**环境:**
-nodejs v12.4.0
-npm 6.9.0
-vue 2.9.6
+**环境:**  
+nodejs v12.4.0  
+npm 6.9.0  
+vue 2.9.6  
 
-**yarn 代理配置:**
+**yarn 代理配置:**  
 yarn config set registry https://registry.npm.taobao.org
